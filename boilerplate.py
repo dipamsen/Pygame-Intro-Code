@@ -24,7 +24,6 @@ pygame.display.set_icon(pygame.image.load("logo.png"))
 
 win = pygame.display.set_mode((WIDTH, HEIGHT))
 
-
 clock = pygame.time.Clock()
 
 
@@ -36,7 +35,6 @@ def redraw_game_window():
 # mainloop
 run = True
 while run:
-
   redraw_game_window()
 
   MOUSE = pygame.mouse.get_pos()
@@ -49,6 +47,5 @@ while run:
       run = False
 
   clock.tick(FPS)
-
 
 pygame.quit()
